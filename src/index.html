@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style -->
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Project Tailwind dengan NPM</title>
+  </head>
+  <body>
+    <!-- ======== navbar ============ -->
+    <header class="sm:px-14 px-6">
+      <nav class="flex flex-wrap items-center flex-row justify-between w-full h-20 sm:py-0 text-lg text-slate-950 bg-white font-semibold">
+        <div>
+          <a href="#" class="font-bold sm:text-2xl text-lg"> DriFudkuh </a>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer sm:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <div class="z-50 hidden absolute sm:relative top-14 sm:top-0 w-screen left-0 sm:flex sm:items-center sm:w-auto" id="menu">
+          <ul class="space-y-1 sm:space-y-0 text-sm bg-white text-slate-950 sm:flex sm:justify-between sm:pt-0 sm:p-0 pl-9 pt-4">
+            <li class="list">
+              <a class="sm:p-4 py-2 block hover:text-rose-500" href="#profil">Profil</a>
+            </li>
+            <li class="list">
+              <a class="sm:p-4 py-2 block hover:text-rose-500" href="#testimoni">Testimoni</a>
+            </li>
+            <li class="list">
+              <a class="sm:p-4 py-2 block hover:text-rose-500" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden sm:block">
+          <a target="_blank" href="https://www.tokopedia.com/drifudkuh"> <button class="bg-slate-950 hover:bg-green-600 transition-all text-white px-6 rounded-md py-2.5 text-sm shadow">Tokopedia</button></a>
+        </div>
+      </nav>
+
+      <!-- ======== Landing Page ============ -->
+      <section class="flex sm:px-16 space-y-4 flex-col-reverse sm:flex-row justify-between items-center mx-auto">
+        <div class="sm:w-1/2 sm:py-4 sm:pl-16">
+          <div class="flex flex-col items-start mt-10 sm:mt-0">
+            <a target="_blank" href="https://www.tokopedia.com/drifudkuh" class="text-rose-500 text-sm font-medium mb-3.5 hover:underline hidden sm:block">- Hubungi toko</a>
+            <h1 class="sm:text-4xl text-3xl font-bold sm:pb-5 pb-3">
+              Kitchen Flavor <br />
+              <span class="text-orange-400 sm:text-3xl text-3xl">Cat Beauty</span>
+            </h1>
+            <p class="text-slate-600 text-sm">
+              Kitchen Flavor adalah makanan kucing bebas biji-bijian dengan kandungan ikan, ubi, dan kacang polong. Memiliki manfaat untuk kilau bulu, nutrisi kulit, pencernaan sehat, menghilangkan gumpalan bulu, dan menjaga kesehatan mata
+              kucing.
+            </p>
+            <div class="flex sm:flex-row flex-col-reverse sm:items-center items-start justify-center sm:pt-12 pt-5">
+              <a target="_blank" href="https://www.tokopedia.com/drifudkuh"
+                ><button class="bg-rose-500 hover:bg-rose-700 transition-all text-white px-8 rounded-md py-3 text-sm shadow flex justify-between items-center space-x-6">Pesan Sekarang <i class="bx bxs-shopping-bags ml-2"></i></button
+              ></a>
+              <div class="flex flex-row sm:ml-3 sm:mb-0 mb-2">
+                <p class="text-2xl font-bold mx-1 shadow-green-600 text-green-500">IDR 110K</p>
+                <p class="line-through text-xs text-slate-900 font-semibold">IDR 150K</p>
+              </div>
+
+              <!-- <button class="bg-green-500 hover:bg-green-700 transition-all text-white px-6 rounded-md py-3 text-sm shadow">Pesan Sekarang</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="sm:w-1/2 sm:py-4 px-8 flex items-start justify-center">
+          <img src="img/brand3.jpg" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- profil -->
+    <section id="profil" class="sm:mt-20 mt-20 flex sm:px-16 space-y-4 flex-col sm:flex-row justify-between items-start mx-auto">
+      <div class="sm:w-1/2 sm:py-4 sm:pl-20 mx-auto max-w-lg">
+        <div>
+          <iframe
+            class="rounded-2xl w-full h-48 shadow"
+            src="https://www.youtube.com/embed/B543guvYYY4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex-row justify-between mt-6 hidden sm:flex">
+          <img src="img/cat1.jpg" alt="" width="204rem" class="rounded-2xl shadow" />
+          <img src="img/cat2.jpg" alt="" width="204rem" class="rounded-2xl shadow" />
+        </div>
+      </div>
+      <div class="sm:w-1/2 sm:py-0 px-6 sm:px-0 sm:pr-24 flex items-start justify-center">
+        <div class="flex flex-col items-start mt-2 sm:mt-0">
+          <h2 class="sm:text-2xl text-lg font-bold sm:pb-5 pb-3">Temukan Rasa Aman dan Kesehatan dengan Kitchen Flavor, Tersedia di DriFudkuh !</h2>
+
+          <div class="sm:flex-row flex-col justify-center items-center sm:pb-7 pb-8 sm:space-x-3 sm:space-y-0 space-y-3 hidden sm:flex">
+            <a target="_blank" href="https://www.tokopedia.com/drifudkuh"
+              ><button class="bg-green-500 border border-green-500 hover:bg-green-700 transition-all text-white px-6 rounded-md py-2.5 text-sm shadow flex justify-between items-center space-x-6">
+                Cek Tokopedia <i class="bx bx-store ml-2"></i></button
+            ></a>
+            <a target="_blank" href="https://www.instagram.com/drifudkuh_cat/">
+              <button class="bg-transparent p-[1px] hover:bg-rose-500 transition-all text-rose-500 hover:text-white border-rose-500 rounded-md text-sm shadow flex justify-between items-center space-x-6">
+                <i class="bx bx-md bxl-instagram"></i></button
+            ></a>
+            <a target="_blank" href="https://www.facebook.com/people/Drifoodkuh-Cat/pfbid0iWormfC6F2FqW689fvFhkvuFNJVRwxWNe4PsTdKXQEswgDcvqoKY2bFAmTriYMepl/"
+              ><button class="bg-transparent p-[1px] hover:bg-blue-500 transition-all text-blue-500 hover:text-white border-rose-500 rounded-md text-sm shadow flex justify-between items-center space-x-6">
+                <i class="bx bx-md bxl-facebook-circle"></i></button
+            ></a>
+          </div>
+          <p class="text-slate-600 text-sm">
+            Pada Drifudkuh, kami mengerti bahwa kesehatan kucing Anda adalah prioritas utama. Oleh karena itu, kami bekerja sama dengan Kitchen Flavor untuk memberikan Anda makanan kucing terbaik yang memperhatikan nutrisi dan keamanan.
+            Dibuat dengan cinta dan perhatian, Kitchen Flavor menggunakan bahan-bahan segar alami yang diproses dengan teknologi modern untuk memastikan kualitas terbaik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- manfaat -->
+    <section class="sm:mt-32 mt-20 flex sm:px-16 space-y-4 flex-col sm:flex-col justify-center items-center mx-auto px-6">
+      <div class="w-auto md:text-center text-left flex justify-center items-center flex-col sm:mb-16 mb-7 space-y-3">
+        <h2 class="text-2xl font-bold">Lalu Mengapa <span class="text-rose-500">DriFudkuh</span> memilih <span class="text-sky-500">Kitchen Flavor</span> ?</h2>
+        <p class="text-slate-600 text-sm md:w-[35rem]">Selain kami hanya memilih produk Dryfood yang berkualitas premium seperti Kitchen Flavor, Berikut manfaat unggulan yang terdapat di Kitchen Flavor</p>
+      </div>
+      <ul class="flex flex-row flex-wrap sm:justify-around justify-start items-start md:max-w-[62rem]">
+        <li>
+          <div class="flex flex-col space-y-1 pb-9 w-64 text-slate-600">
+            <i class="bx bx-dna bx-sm"></i>
+            <h4 class="font-bold text-base text-black">Meningkatkan kesehatan sistem pencernaan</h4>
+            <p class="text-sm">Makanan ini menggunakan bahan bahan dasar organik yang berkualitas untuk menjaga sistem pencernaan kucing.</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col space-y-1 pb-9 w-64 text-slate-600">
+            <i class="bx bxs-color bx-sm"></i>
+            <h4 class="font-bold text-base text-black">Menjaga Kesehatan Mata</h4>
+            <p class="text-sm">Makanan ini juga dirancang untuk menjaga kesehatan mata kucing Anda.</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col space-y-1 pb-9 w-64 text-slate-600">
+            <i class="bx bx-plus-medical bx-sm"></i>
+            <h4 class="font-bold text-base text-black">Pembentukan Otot yang Baik</h4>
+            <p class="text-sm">Protein berkualitas tinggi dalam makanan ini membantu dalam pembentukan otot yang baik pada kucing Anda.</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col space-y-1 pb-9 w-64 text-slate-600">
+            <i class="bx bxs-cat bx-sm"></i>
+            <h4 class="font-bold text-base text-black">Pertumbuhan yang Sehat</h4>
+            <p class="text-sm">Makanan ini mengandung nutrisi penting yang diperlukan untuk pertumbuhan dan perkembangan yang optimal pada kucing.</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col space-y-1 pb-9 w-64 text-slate-600">
+            <i class="bx bxs-check-shield bx-sm"></i>
+            <h4 class="font-bold text-base text-black">Menjaga kekebalan tubuh</h4>
+            <p class="text-sm">Kandungan nutrisi yang seimbang dan bermanfaat dalam makanan ini dapat mendukung sistem kekebalan tubuh kucing.</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-col space-y-1 pb-9 w-64 text-slate-600">
+            <i class="bx bxs-happy-heart-eyes bx-sm"></i>
+            <h4 class="font-bold text-base text-black">Mempercantik Bulu</h4>
+            <p class="text-sm">Makanan ini dapat membantu memberikan kilau bulu yang sehat dan indah pada kucing Anda.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- testimoni -->
+    <sectio id="testimoni" class="sm:mt-10 mt-2 py-14 flex sm:px-20 space-y-4 mx-auto justify-center px-6">
+      <div class="flex-col sm:flex-col justify-center items-start w-full">
+        <div class="">
+          <h2 class="text-2xl mb-4 font-bold">Lalu Apa <span class="text-rose-500">Kata</span> <span class="text-sky-500">Mereka</span> ?</h2>
+          <p class="text-slate-600 text-sm sm:w-80">Berikut adalah tanggapan mereka setelah menjadi bagian DriFudkuh.</p>
+        </div>
+        <ul class="grid px-8 grid-flow-col items-center transition-all sm:justify-around justify-start w-full scroll-smooth md:gap-7 gap-7 pb-10 overflow-y-auto snap-mandatory">
+          <li>
+            <div class="p-6 rounded-xl shadow-md my-6 flex flex-col flex-start space-y-2 w-56 bg-white">
+              <i class="bx bxs-quote-alt-left bx-lg text-rose-300 mb-2"></i>
+              <p class="text-sm">Kucing saya suka, bulunya jadi lebih ga gampang rontok👍🏻 expired masih lama tahun depan</p>
+              <div class="flex flex-row flex-start items-center space-x-3 pt-5">
+                <img src="img/cat1.jpg" alt="profil" class="h-8 w-8 object-cover rounded-full" />
+                <div>
+                  <p class="font-bold text-xs">Yuni Azura</p>
+                  <p class="text-xs text-slate-600">Pelanggan</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="p-6 rounded-xl shadow-md my-6 flex flex-col flex-start space-y-2 w-56 bg-white">
+              <i class="bx bxs-quote-alt-left bx-lg text-rose-300 mb-2"></i>
+              <p class="text-sm">Apa lagi yang bisa kukatakan selain oke banget. Belanja kesekian kalinya di sini. Harga juga bersaing. Mantaplah!</p>
+              <div class="flex flex-row flex-start items-center space-x-3 pt-5">
+                <img src="img/cat1.jpg" alt="profil" class="h-8 w-8 object-cover rounded-full" />
+                <div>
+                  <p class="font-bold text-xs">Suci Muslimah</p>
+                  <p class="text-xs text-slate-600">Pelanggan</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="p-6 rounded-xl shadow-md my-6 flex flex-col flex-start space-y-2 w-56 bg-white">
+              <i class="bx bxs-quote-alt-left bx-lg text-rose-300 mb-2"></i>
+              <p class="text-sm">Kesekian kalinya beli disini karena selalu puas atas produk dan pelayanan seller yg fast response ti</p>
+              <div class="flex flex-row flex-start items-center space-x-3 pt-5">
+                <img src="img/cat1.jpg" alt="profil" class="h-8 w-8 object-cover rounded-full" />
+                <div>
+                  <p class="font-bold text-xs">Aldi Rahmat</p>
+                  <p class="text-xs text-slate-600">Pelanggan</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="p-6 rounded-xl shadow-md my-6 flex flex-col flex-start space-y-2 w-56 bg-white">
+              <i class="bx bxs-quote-alt-left bx-lg text-rose-300 mb-2"></i>
+              <p class="text-sm">cepet banget pengirimannya, bakal langganan trs disini kalo makanan anabul udah mau abis dan butuh cepett 😊</p>
+              <div class="flex flex-row flex-start items-center space-x-3 pt-5">
+                <img src="img/cat1.jpg" alt="profil" class="h-8 w-8 object-cover rounded-full" />
+                <div>
+                  <p class="font-bold text-xs">Siska</p>
+                  <p class="text-xs text-slate-600">Pelanggan</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </sectio>
+
+    <!-- ======== click to action ============ -->
+    <section class="sm:px-16 px-4 space-y-4 mx-auto my-0 mb-24">
+      <div class="bg-sky-500 flex flex-col-reverse sm:flex-row sm:justify-between items-center py-9 sm:py-0 px-9 text-center sm:text-left" style="border-radius: 3rem">
+        <div class="sm:w-1/2 sm:pl-16">
+          <div class="flex flex-col sm:items-start items-center mt-5 sm:mt-0">
+            <h1 class="sm:text-3xl text-white text-base font-bold sm:pb-5 pb-3">Puaskan Selera Tinggi Kucing Anda dengan Kelezatan Kitchen Flavor, Hanya di Drifudkuh!</h1>
+            <!-- <p class="text-white text-sm">Dryfood dengan kualitas premium untuk kesehatan kucing anda.</p> -->
+            <div class="flex flex-row justify-center sm:pt-12 pt-8">
+              <a target="_blank" href="https://www.tokopedia.com/drifudkuh"
+                ><button class="bg-rose-500 hover:bg-rose-700 transition-all text-white px-8 rounded-md py-3 text-sm shadow flex justify-between items-center space-x-6">Pesan Sekarang <i class="bx bxs-shopping-bags ml-2"></i></button
+              ></a>
+
+              <!-- <button class="bg-green-500 hover:bg-green-700 transition-all text-white px-6 rounded-md py-3 text-sm shadow">Pesan Sekarang</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="sm:w-1/2 sm:py-4 px-8 flex sm:items-start justify-center">
+          <img src="img/products2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== Footer ============ -->
+    <footer id="kontak" class="flex items-center justify-evenly sm:justify-between flex-col-reverse sm:flex-row sm:px-[40px] lg:px-[50px] xl:px-[75px] w-full h-[100px]">
+      <div class="text-sm text-slate-600">Copyright © 2023 DriFudkuh</div>
+
+      <ul class="flex gap-[30px] text-slate-600 items-center text-2xl -ml-8 sm:ml-0">
+        <li><p class="text-sm text-slate-900 hidden sm:block">Hubungi Kami</p></li>
+        <a target="_blank" href="https://www.facebook.com/people/Drifoodkuh-Cat/pfbid0iWormfC6F2FqW689fvFhkvuFNJVRwxWNe4PsTdKXQEswgDcvqoKY2bFAmTriYMepl/"
+          ><li class="ease-in duration-200 hover:text-blue-500 cursor-pointer"><i class="bx bxl-facebook-circle"></i></li
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/drifudkuh_cat/"
+          ><li class="ease-in duration-200 hover:text-rose-500 cursor-pointer"><i class="bx bxl-instagram-alt"></i></li
+        ></a>
+        <a target="_blank" href="https://www.tokopedia.com/drifudkuh"
+          ><li class="ease-in duration-200 hover:text-green-500 cursor-pointer"><i class="bx bxs-store-alt"></i></li
+        ></a>
+      </ul>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
